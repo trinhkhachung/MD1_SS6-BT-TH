@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "section article article"
+                "section aside aside"
+                "section footer footer"
+                "feed footer footer";
+            grid-template-rows: 100px 100px 100px 100px 100px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: wheat;
+        }
+
+        .section {
+            grid-area: section;
+            background-color: aqua;
+        }
+
+        .article {
+            grid-area: article;
+            background-color: violet;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: paleturquoise;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: greenyellow;
+        }
+
+        .feed {
+            grid-area: feed;
+            background-color: pink;
+        }
+
+        img {
+            width: 709.46px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">We like balloons</div>
+        <div class="section"><img
+                src="https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/366064356_3534814163427002_4982871480118515816_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=EHlbaZ7g4V8AX8N_lRU&_nc_ht=scontent.fhan3-5.fna&oh=00_AfD09MWYc-197rz-voEn7xTaC34BaLhkmkyJJGtbpU4fkg&oe=64DF5526"
+                alt=""></div>
+        <div class="article">Angry people at balloon fiestas</div>
+        <div class="aside">Balloon photos</div>
+        <div class="footer">Sing up for more information about ballopms</div>
+        <div class="feed">10 things you discover when taking a balloon ride</div>
+    </div>
+</body>
+
+</html>

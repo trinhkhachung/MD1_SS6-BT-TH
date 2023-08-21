@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .khoi {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            grid-area: khoi;
+        
+        }
+        button {
+            background-color: black;
+            color: white;
+        }
+        .anh {
+            display: grid;
+            grid-template-areas: 
+            "khoi khoimot "
+            "khoihai khoiba "
+            "khoibon khoinam ";
+            grid-template-columns: 250px 250px ;
+            grid-template-rows: 150px 150px 150px;
+            gap: 30px;
+            
+        }
+        .mot {
+            grid-area: khoimot;
+        }
+         .hai {
+            grid-area: khoihai;
+        }
+         .ba {
+            grid-area: khoiba;
+        }
+         .bon {
+            grid-area: khoibon;
+        }
+         .nam {
+            grid-area: khoinam;
+        }
+       main{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+       }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        body {
+            background: url('https://marketplace.canva.com/EAFhwfMq3ds/1/0/1600w/canva-colorful-cute-cats-illustration-desktop-wallpaper-KBBZLdpjLcM.jpg');
+        }
+        @media (max-width: 992px) {
+            .anh {
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                height: 150px;
+            }
+            body {
+                background: url('https://marketplace.canva.com/EAFDHEq1Iio/1/0/1600w/canva-black-and-white-modern-kawaii-kitten-%26-hamster-face-zoom-virtual-background-f4iMgZVxjs0.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Sách trực tuyến</h1>
+        </header>
+    </div> 
+    <main>
+       <div>
+        <div class="anh">
+            <div class="khoi">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+            <div class="khoi mot">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+            <div class="khoi hai">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+            <div class="khoi ba">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+            <div class="khoi bon">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+            <div class="khoi nam">
+                <div>
+                    <h3>
+                        Sách
+                    </h3>
+                </div>
+                <div>
+                    <span>Giá $10</span>
+                </div>
+                <div>
+                    <button>Mua</button>
+                </div>
+            </div>
+        
+        </div>
+       </div>
+    </main> 
+</body>
+</html>
